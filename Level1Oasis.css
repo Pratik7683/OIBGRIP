@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(15, 6, 0);
+    text-shadow: -1px -1px 0 rgb(248, 239, 239), 1px -1px 0 rgb(223, 210, 210), -1px 1px 0 rgb(230, 216, 216), 1px 1px 0 rgb(212, 194, 194);
+
+}
+
+
+header {
+    padding: 40px;
+    background: url("pexels-pixabay-207691\ \(1\).jpg") no-repeat  center ;
+    background-size: cover;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a:hover{
+    background-color: rgb(215, 217, 250);
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
+}
+
+section:nth-child(1) {
+
+    background: url("pang-yuhao-_kd5cxwZOK4-unsplash.jpg") no-repeat  center ;
+    background-size: cover;
+} 
+section:nth-child(2) {
+
+    background: url("zhanhui-li-1iuxWsIZ6ko-unsplash.jpg") no-repeat  center ;
+    background-size: cover;
+} 
+section:nth-child(3) {
+
+    background: url("priscilla-du-preez-ggeZ9oyI-PE-unsplash.jpg") no-repeat  center ;
+    background-size: cover;
+} 
+section:nth-child(4) {
+
+    background: url("pexels-hasan-albari-1229861.jpg") no-repeat  center ;
+    background-size: cover;
+    height: auto;
+} 
+
+section {
+    min-height: 100vh;
+}   
+
+video {
+    padding: 10px;
+}
+
+iframe {
+    height: 75vh;
+}
+
+img {
+    padding: 10px;
+}
+
+section h5 {
+    margin: 40px;
+}
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+.Clip{
+    clip-path: circle(50% at 50% 50%);
+}
+
+#contact{
+    color: rgb(0, 4, 7);
+    text-shadow: -1px -1px 0 rgb(248, 239, 239), 1px -1px 0 rgb(223, 210, 210), -1px 1px 0 rgb(230, 216, 216), 1px 1px 0 rgb(212, 194, 194);
+
+}
+
+.myName{
+    color: aliceblue;
+    text-shadow: -1px -1px 0 rgb(14, 4, 4), 1px -1px 0 rgb(8, 5, 5), -1px 1px 0 rgb(8, 1, 1), 1px 1px 0 rgb(212, 194, 194);
+
+}

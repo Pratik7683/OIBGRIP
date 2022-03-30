@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" class="logo">Portfolio</a>
+      <div id="toggle"></div>
+      <div id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <img
+          class="Clip"
+          src="1647869687209.jpg"
+          alt="This is Pratik Agawane"
+          width="20%"
+        />
+        <h1 class="myName">
+          Hello, I'am Pratik Agawane. <br />I'am a Web Designer <br />
+          <button class="cvbutton" style="font-size: large">Download CV</button>
+        </h1>
+      </section>
+
+      <section id="about">
+        <p class="aboutsome">
+          &nbsp; &nbsp; &nbsp; &nbsp;Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Eveniet, aliquam? Nam doloribus tempora error,
+          exercitationem dolores consectetur nostrum eum cum a, facilis ipsa
+          laudantium! Impedit aliquam a distinctio sunt consectetur! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Ullam deleniti illo
+          natus, reiciendis obcaecati tempora eaque dolores porro voluptatem
+          adipisci veniam numquam sed esse provident, atque labore optio dolorem
+          excepturi.<br /> <br>
+          <a href="" style="color:#000508">ReadMore</a>
+        </p>
+
+        <p class="aboutname">About</p>
+      </section>
+
+      <section id="team">
+        <h2 class="ourteam">Our Team</h2>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="Manjunath.jpeg"  height="270px" />
+              <div class="container">
+                <h3>Manjunath Mali</h3>
+                <p class="title">Web Designer</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis facilis
+                </p>
+                <p>manjunath@gmail.com</p>
+                <p>
+                  <button class="button" style="margin: 7px 0px 7px 0px">
+                    Contact
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="WhatsApp Image 2022-03-22 at 11.58.45 AM.jpeg"" height="270px" />
+              <div class="container">
+                <h3>Akash Patil</h3>
+                <p class="title">Web Designer</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis facilis
+                </p>
+                <p>akash@gmail.com</p>
+                <p><button class="button"  style="margin: 7px 0px 7px 0px">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="media">
+          <a
+            href="https://www.youtube.com/channel/UC_mp5lnCySJhMUao8u4XvMA"
+            target="_blank"
+            rel="noopener noreferrer"
+            >YouTube</a
+          >&nbsp; | &nbsp;
+          <a
+            href="https://www.instagram.com/itz_pra3k/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >&nbsp; | &nbsp;
+          <a
+            href="https://www.linkedin.com/in/pratik-agawane-b29947218/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const header = document.getElementById("header");
+      const toggle = document.getElementById("toggle");
+      const navbar = document.getElementById("navbar");
+
+      document.onclick = function (e) {
+        if (
+          e.target.id !== "header" &&
+          e.target.id !== "toggle" &&
+          e.target.id !== "navbar"
+        ) {
+          toggle.classList.remove("active");
+          navbar.classList.remove("active");
+        }
+      };
+      toggle.onclick = function () {
+        toggle.classList.toggle("active");
+        navbar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

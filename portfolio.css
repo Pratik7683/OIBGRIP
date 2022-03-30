@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.logo{
+    height: 60px;
+    line-height: 60px;
+    color: #12334e;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+#toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #3294bb;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-5px);
+    transition: 0.2s;
+
+}
+
+#toggle::after{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(5px);
+    transition: 0.2s;
+    
+}
+
+#toggle.active::before{
+    transform: translateY(0px) rotate(45deg); 
+}
+
+#toggle.active::after{
+    transform: translateY(0px) rotate(-45deg); 
+}
+
+#toggle.active{
+    background: #f7226a;
+}
+
+#navbar{
+    position: relative;
+    height: 60px;
+    right: 60px;
+    background: #fff;
+    transition: 0.5s;
+    width: 0px;
+    overflow: hidden;
+
+}
+
+#navbar.active{
+    width: 660px;
+}
+
+#navbar ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: #12334e;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0 15px;
+    letter-spacing: 2px;
+}
+
+#navbar ul li :hover {
+    color: #fff;
+    background-color: #c232e6;
+}
+
+section:nth-child(1){
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #12334e;
+    font-weight: 700;
+    min-height: 100vh;
+    background: url("pexels-jess-bailey-designs-1097930.jpg") no-repeat  center ;
+    background-size: cover;
+    height: auto;
+}
+
+.aboutsome{
+    margin-bottom: 300px;
+    word-spacing: 5px;
+    margin-left: 70px;
+    line-height: 2.1;
+}
+.aboutname{
+    margin-top: 500px;
+    margin-right: 90px;
+    font-size: 170px;
+}
+section:nth-child(2){
+    position:relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    color:#12334e;
+    font-weight: 700;
+    background: url("martha-dominguez-de-gouveia-9UtO1v50BYM-unsplash.jpg") no-repeat  center ;
+    background-size: cover;
+}
+section:nth-child(3){
+     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section:nth-child(4){
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ee5a5a;
+    font-weight: 700;
+    font-size:xx-large;
+    background: url("5124556.jpg") no-repeat  center ;
+    background-size:contain;
+
+}
+
+.myName{
+    padding: 30px 30px;
+}
+
+#home{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.Clip{
+    clip-path: circle(50% at 50% 50%);
+    opacity: 0.9;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+.container {
+    padding: 0 16px;
+}
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: large;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0px 90px 0px 90px;
+}
+.card img{
+    width: 85%;
+    border-radius: 7px;
+}
+
+#team{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cvbutton{
+    background-color: #f7226a;
+    color: #fff;
+    padding: 7px 107px 7px 107px ;
+    border: none;
+}
+
+.cvbutton:hover{
+    background-color:#3294bb ;
+}
+
+.ourteam{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #f7226a;
+    font-size:45px;
+}
+
+.media{
+    margin-top: 600px;
+}
+
+.media a:hover{
+    color:#be1616;
+}
+
+
+@media (max-width:991px) {
+    #navbar{
+        position: fixed;
+        bottom: -100%;
+        right: 0;
+        width: 100%;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar.active{
+        height: calc(100vh - 60px);
+        bottom: 0;
+        width:  100%;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
